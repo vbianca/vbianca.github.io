@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>My CV-Bianca</title>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>CV</h1>
+            <h2>Vesa <span>Bianca</span></h2>
+            <img src="eu.jpeg" width="100" alt="Bianca">
+
+            <p id="job-title">Studenta</p>
+        </div>
+        <ul id=top-menu-bar>
+            <li> <a href="#"onclick ="showHome()">Home</a></li>
+            <li> <a href="#" onclick="showSkills()">Skills</a></li>
+            <li> <a href="#" onclick="showProjects()">Projects</a></li>
+            <li> <a href="#"onclick="showLanguages()" >Languages</a></li>
+
+        </ul>
+
+
+    </header>
+    <section id="content">
+        <div id="side-menu">
+            <section>
+                <form action="">
+                    <label for="e">Email</label>
+                    <input type="email" id="e" name="em">
+                    <input type="text" id="nume" name="nume" placeholder="Your Name">
+                    <button>
+                        Contact as
+                    </button>
+                </form>
+            </section>
+            <section>M2</section>
+        </div>
+        <div id="main" >
+            <div id="home" class="page">
+                <h2>Home</h2>
+                Bine ai venit, aici sunt detalii deste mine poate:))
+            </div>
+
+            <div id="skills" class="page" style="display: none;">
+                <h2>Skills @ Endorcements</h2>
+                <ul>
+                    <li class="favorite">Ambitioasa</li>
+                    <li class="favorite"> Perserverenta</li>
+                    <li class="favorite"> Deschisa la lucruri noi</li>
+                </ul>
+            </div>
+            <div id="projects" class="page" style="display: none;">
+                <h2>Projects</h2>
+                Mai tarziu o sa apara
+            </div>
+            <div id="languages" class="page" style="display: none;">
+                <h2>Known Languages</h2>
+                <table border="1">
+                    <tr>
+                        <td>Materna</td>
+                        <td>Romana</td>
+                    </tr>
+                    <tr>
+                        <td>Avansat</td>
+                        <td>Italiana</td>
+                    </tr>
+                    <tr>
+                        <td>Incepator</td>
+                        <td>Spaniola</td>
+                    </tr>
+
+
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+    <footer> <a target="_blank" href="https://fasttrackit.org/curs-web-cluj-napoca/">Curs web</a> </footer>
+
+    <script src="functions.js"></script>
+    
+</body>
+
+</html>
