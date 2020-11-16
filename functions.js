@@ -11,11 +11,6 @@ function hide(id){
     }
 }
 function hideAllPages(){
-    //hide("home");
-    //hide("skills");
-    //hide("projects");
-    //hide("languages");
-
     var pages = document.querySelectorAll(".page");
     //for(initializare; conditie; post exectutie( i = i + 1))
     for (var i = 0; i < pages.length; i++){
@@ -30,20 +25,3 @@ function showPage(pageId) {
     hideAllPages();
     document.getElementById(pageId).style.display = "";
  }
-/*
-function showHome() {
-   showPage('home');
-}
-
-function showSkills() {
-    showPage('skills');
-}
-
-function showProjects(){
-    showPage("projects");
-}
-
-function showLanguages(){
-   showPage("languages");
-}
-*/
