@@ -1,4 +1,4 @@
-var activePage = "home";
+var activePage = "skills";
 
 function hide(id) {
     var el = document.getElementById(id);
@@ -49,12 +49,16 @@ var skills = [
     { name:"JS", endorsements:20 }
 ];
 
-var skillsLi = skills.map(function (skill) {
-    var endorsements = ` <span>&middot; ${skill.endorsements}</span>`;
-    return "<li>" + skill.name + endorsements + "</li>";
-});
+function showSkills(skills) {
+    var skillsLi = skills.map(function (skill) {
+        var endorsements = ` <span>&middot; ${skill.endorsements}</span>`;
+        return "<li>" + skill.name + endorsements + "</li>";
+    });
+    
+    
+    var ul = document.querySelector("#skills ul");
+    ul.innerHTML = skillsLi.join("");
+    
+}
 
-
-var ul = document.querySelector("#skills ul");
-ul.innerHTML = skillsLi.join("");
-
+showSkills(skills);
