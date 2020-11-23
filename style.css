@@ -112,6 +112,14 @@ li{
     color: #792f11
 }
 
+#skills li {
+    font-weight: 800;
+}
+
+#skills li span {
+    color:gray;
+    font-weight: 200;
+}
 .favorite {
     columns: #d3a6d3;; 
     background-color: #d3a679; 
