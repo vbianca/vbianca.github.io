@@ -27,7 +27,7 @@ function showPage(pageId) {
 }
 
 function initMenu() {
-    document.addEventListener("click",  (e) => {
+    document.addEventListener("click", e => {
         const link = e.target;
         if (e.target.matches("#top-menu-bar a")) {
             const id = link.getAttribute("data-page");
@@ -42,7 +42,7 @@ initMenu();
 showPage(activePage);
 
 function getHTMLSkills(skills){
-       return skills.map((skill) => {
+       return skills.map(skill => {
         return `<li class="${skill.endorsements > 9 ? "favorite" : "" }">
          ${skill.name} <span>&middot; ${skill.endorsements} </span>
           </li>`;
@@ -55,7 +55,7 @@ function showSkills(skills) {
     
 }
 
-fetch("data/skills.json").then((r) => {
+fetch("data/skills.json").then(r => {
     return r.json();
 }).then((allSkills) => {
     allSkills.sort((s1, s2) => {
