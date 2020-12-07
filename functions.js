@@ -41,6 +41,8 @@ initMenu();
 
 showPage(activePage);
 
+
+
 function showSkills(skills) {
     var skillsLi = skills.map(function (skill) {
         var endorsements = ` <span>&middot; ${skill.endorsements}</span>`;
@@ -54,10 +56,12 @@ function showSkills(skills) {
 }
 
 fetch("data/skills.json").then(function(r){
-   return r.json();
-
-}).then(function(skills){
-    showSkills(skills);
+    return r.json();
+}).then(function(allSkills){
+    console.info('allSkills', allSkills);
+    showSkills(allSkills);
 });
+
+
 
 
